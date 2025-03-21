@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire UID Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Free Fire UID Finder</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Search Box -->
+        <div class="search-box">
+            <input id="ff-id" type="number" placeholder="Enter Player UID">
+            <button onclick="fetchData()">Search</button>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="hidden">Loading...</div>
+
+        <!-- Error Message -->
+        <div id="error-alert" class="hidden"></div>
+
+        <!-- Results Section -->
+        <div id="result" class="hidden">
+            <h2>Player Information</h2>
+            <p><strong>Name:</strong> <span id="name">-</span></p>
+            <p><strong>UID:</strong> <span id="id">-</span></p>
+            <p><strong>Region:</strong> <span id="region">-</span></p>
+            <p><strong>Account Created:</strong> <span id="account_creation">-</span></p>
+            <p><strong>Ban Status:</strong> <span id="ban_status">-</span></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Free Fire UID Finder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
